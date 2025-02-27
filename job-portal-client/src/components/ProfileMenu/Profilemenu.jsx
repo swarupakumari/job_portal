@@ -4,7 +4,7 @@ import "@mantine/core/styles.css";
 import { useNavigate } from "react-router-dom";
 import { useAuth0 } from "@auth0/auth0-react";
 
-const Profilemenu = () => {
+const ProfileMenu = () => {
   const navigate = useNavigate();
   const { user, logout } = useAuth0();
   const [profilePic, setProfilePic] = useState("");
@@ -47,4 +47,4 @@ const Profilemenu = () => {
   );
 };
 
-export default Profilemenu;
+export default ProfileMenu;
