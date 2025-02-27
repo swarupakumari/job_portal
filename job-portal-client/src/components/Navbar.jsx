@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { FaBarsStaggered, FaXmark } from "react-icons/fa6";
 import { useAuth0 } from "@auth0/auth0-react";
-import ProfileMenu from "./ProfileMenu/ProfileMenu";
+import Profilemenu from "./ProfileMenu/ProfileMenu";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -47,7 +47,7 @@ const Navbar = () => {
         {/* Auth Section */}
         <div className="text-lg space-x-5 hidden lg:block">
           {isAuthenticated ? (
-            <ProfileMenu /> // Using ProfileMenu when user is authenticated
+            <Profilemenu /> // Using ProfileMenu when user is authenticated
           ) : (
             <button
               className="py-2 px-5 border rounded bg-blue-600 text-white hover:bg-opacity-80"
@@ -93,7 +93,7 @@ const Navbar = () => {
           ))}
           <li className="py-1">
             {isAuthenticated ? (
-              <ProfileMenu /> // ProfileMenu in mobile view
+              <Profilemenu /> // ProfileMenu in mobile view
             ) : (
               <button
                 className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-opacity-80 w-full"
