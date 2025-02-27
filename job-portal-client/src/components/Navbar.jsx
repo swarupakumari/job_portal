@@ -34,8 +34,8 @@ const Navbar = () => {
                 to={path}
                 className={({ isActive }) =>
                   isActive
-                    ? "text-blue-600 font-bold"
-                    : "text-black hover:text-blue-600"
+                    ? "text-blue font-bold"
+                    : "text-black hover:text-blue"
                 }
               >
                 {title}
@@ -50,7 +50,7 @@ const Navbar = () => {
             <ProfileMenu /> // Using ProfileMenu when user is authenticated
           ) : (
             <button
-              className="py-2 px-5 border rounded bg-blue-600 text-white hover:bg-opacity-80"
+              className="py-2 px-5 border rounded bg-blue text-white hover:bg-blue"
               onClick={loginWithRedirect}
             >
               Login
@@ -83,8 +83,8 @@ const Navbar = () => {
                 to={path}
                 className={({ isActive }) =>
                   isActive
-                    ? "text-blue-600 font-bold"
-                    : "text-black hover:text-blue-600"
+                    ? "text-blue font-bold"
+                    : "text-black hover:text-blue"
                 }
               >
                 {title}
@@ -96,7 +96,7 @@ const Navbar = () => {
               <ProfileMenu /> // ProfileMenu in mobile view
             ) : (
               <button
-                className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-opacity-80 w-full"
+                className="text-blue hover:text-blue"
                 onClick={loginWithRedirect}
               >
                 Login
